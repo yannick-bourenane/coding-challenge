@@ -1,38 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+}
+
+.temperature-page .blue {
+  color: blue;
+}
+
+.temperature-page .black {
+  color: black;
+}
+
+.temperature-page .red {
+  color: red;
+}
+h3 {
+  font-weight: normal;
+}
+.is-selected h3 {
+  font-weight: bold;
+}
 .App {
-  text-align: center;
+  padding: 50px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App nav {
+  margin-bottom: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App nav a {
+  margin-right: 15px;
+  color: dodgerblue;
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App nav a:hover {
+  text-decoration: underline;
+}
+.celebrity {
+  padding: 15px;
+  border: 1px solid #555;
+  margin-bottom: 15px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.more-info {
+  border-left: 1px solid #555;
+  padding-left: 15px;
+  margin-left: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.more-info > * {
+  margin-bottom: 10px;
+}
+.customize-image-page input,
+.temperature-page input {
+  margin-bottom: 10px;
+  width: 150px;
 }
